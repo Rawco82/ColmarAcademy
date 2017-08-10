@@ -2,81 +2,139 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Colmar Academy | Welcome!!</title>
-    <link rel="stylesheet" href="./resources/css/reset.css">
-    <link rel="stylesheet" href="./resources/css/style.css">
+    <title>Colmar</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/practice.css">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
   </head>
   <body>
-    <!-- Header -->
+    <!-- Navigation section-->
     <header>
       <div class="brand">
-        <img class="icon" src="./resources/images/ic-logo.svg">
-        <div class="name">
-          <span class="part-1">colmar</span><span class="part-2">academy</span>
-        </div>
+        <img class="icon" src="resources/images/ic-logo.svg" />
+        <h4 class="name"><strong>colmar</strong><span style="color:#9B9B9B; font-family: Calibri Light; font-size: 1.1em">academy</span></h4>
       </div>
       <nav>
-        <ul>
+        <ul class="full-nav">
           <li><a href="#">on campus</a></li>
-          <li><a href="#">online</a></li>
+          <li><a href="#">on line</a></li>
           <li><a href="#">for companies</a></li>
-          <li><a href="#" class="button">sign up</a></li>
+          <li><a href="#">sign in</a></li>
+        </ul>
+        <ul class="mobile-nav">
+          <li><a href="#"><img class="icon" src="resources/images/ic-logo.svg" /></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
         </ul>
       </nav>
-      <!--  <nav class="mobile">
-          <ul>
-            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
-            <li><a href="#" class="button"><img src="./resources/images/ic-login.svg"></a></li>
-          </ul>
-        </nav> -->
     </header>
-      <!-- Hero Section -->
+
+<!-- SECTION ONE -->
+
     <section id="hero">
-      <img src="resources/images/banner.jpg" class="hero-image">
+      <div class="hero-image">
+        <img src="resources/images/banner.jpg">
+      </div>
       <div class="hero-cta">
-        <h2 class="hero-heading">Learn something <br> new everyday</h2>
-          <p class="hero-description">Lorem ispum doler sit amit consector adipising eliet</p>
-          <button class="hero-button">start here</button>
+        <h1 class="hero-heading">Learn something <br> new everyday</h1>
+        <p class="hero-description">Lorem ispum doler sit amit,<br/> consector adipising eliet</p>
+        <button class="hero-button">start here</button>
       </div>
     </section>
-    <section id="blog">
-      <div class="blog-section">
-        <div class="blog-part1">
-          <img src="resources/images/information-main.jpg" class="blog-practicing-image">
-          <div class="blog-practicing">
-            <h2 class="blog-heading">it doesn't hurt to keep practicing</h2>
-            <p class="blog-review">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            </p>
-            <p class="blog-reviewer-info">emmanuel, sr. strategist at Hiring.com</p>
-          </div>
-          <div class="blog-part2">
-          <img src="./resources/images/information-orientation.jpg" class="blog-orientation-image">
-            <div class="blog-orientation">
-              <h4 class="blog-orientation-heading">orientation date</h4>
-              <p class="blog-orientation-info">tue 10/11 & wed 10/12: 8am - 3pm</p>
-              <button class="blog-orientation-link"><a href="#">read more</a></button>
-            </div>
-           <img src="./resources/images/information-campus.jpg" class="blog-campus-image">
-           <div class="blog-campus">
-             <h4 class="blog-campus-heading">our campus</h4>
-             <p class="blog-campus-info">find which campus is close to you</p>
-             <button class="blog-campus-link"><a href="#" class="button">read more</a></button>
-           </div>
-           <img src="./resources/images/information-guest-lecture.jpg">
-           <div class="blog-guest">
-             <h4 class="blog-guest-heading">our guest lecture</h4>
-             <p class="blog-guest-info">join a keynote with oliver sack about music in medical treatment</p>
-             <button class="blog-guest-link"><a href="#" class="button">read more</a></button>
-           </div>
-        </div> <!-- blog-part2-->
-      </div> <!-- blog-section-->
-    </section>
 
-<!--learning section3  -->
+<!-- SECTION TWO -->
+
+    <section2>
+      <div id="blog-section">
+  <!-- first column-->
+        <div class="column-large">
+          <div class="column-large-img">
+            <img src="resources/images/information-main.jpg"/>
+          </div>
+          <div class="blog-narrative">
+            <h2>It doesn't hurt to keep practicing</h2>
+            <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br/>
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br/>
+              pariatur."
+            </p>
+            <h4>emmanuel, sr. strategist at Hiring.com</h4>
+          </div>
+        </div>
+  <!-- second column -->
+
+        <div class="column-small">
+          <div class="blog-img1">
+            <img src="./resources/images/information-orientation.jpg">
+            <div class="blog-text">
+              <h4>Orientation date</h4>
+              <p>tue 10/11 & wed 10/12: 8am - 3pm</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="blog-img2">
+            <img src="./resources/images/information-campus.jpg">
+            <div class="blog-text2">
+              <h4>Our campus</h4>
+              <p>find which campus is close to you</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="blog-img3">
+            <img src="./resources/images/information-guest-lecture.jpg">
+            <div class="blog-text">
+              <h4>Our guest lecture</h4>
+              <p>join a keynote with oliver sack about music in medical treatment</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+
+      <!-- mobile-blog -->
+
+        <div class="mobile-blog">
+          <div class="mobile-blog-img">
+            <img src="./resources/images/information-orientation-mobile.jpg">
+            <div class="mobile-blog-text">
+              <h4>Orientation date</h4>
+              <p>tue 10/11 & wed 10/12: 8am - 3pm</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="mobile-blog-img">
+            <img src="./resources/images/information-campus-mobile.jpg">
+            <div class="mobile-blog-text">
+              <h4>Our campus</h4>
+              <p>find which campus is close to you</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="mobile-blog-img">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg">
+            <div class="mobile-blog-text">
+              <h4>Our guest lecture</h4>
+              <p>join a keynote with oliver sack about music in medical treatment</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+        <!-- End of mobile-blog -->
+      </div>
+    </section2>
+
+<!-- SECTION 3 -->
+
+    <section3>
       <div id="learning">
         <h2>start learning</h2>
+        <div class="mobile-courses">
+          <div class="mobile-study">software engineering</div>
+          <div class="mobile-study">computer art</div>
+          <div class="mobile-study">design</div>
+          <div class="mobile-study">data</div>
+          <div class="mobile-study">business</div>
+          <div class="mobile-study">marketing</div>
+        </div>
         <div class="flex-container">
           <div class="courses">
             <img src="./resources/images/course-software.jpg">
@@ -116,31 +174,55 @@
           </div>
         </div>
       </div>
-      <!--<div class="thesis">
-        <h2>thesis exhibit</h2>
-          <div class="urban">
-            <video></video>
-            <h3>reimagine urban</h3>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo."</p>
-          </div>
-          <div class="fisma">
-            <img src="./resources/images/thesis-fisma.jpg">
-            <h3>fisma: design and</h3>
-            <p>designer showcase of new prototype product</p>
-          </div>
-          <div class="now">
-            <img src="./resources/images/thesis-now-and-then.jpg">
-            <h3>now and then</h3>
-            <p>research study about new york</p>
-          </div>
-      </div>--> <!-- thesis closing div -->
-    <!--<footer><p>2016 colmar academy all rights reserved</p>
-      <a href="#" class="button">terms</a>
-      <a href="#" class="button">privacy</a>
-    </footer> -->
+    </section3>
 
-    <!-- </div> --> <!-- main-content closing div -->
+<!-- Section 4 -->
+
+    <section4>
+      <div class="thesis-exhibit">
+          <h2>Thesis exhibits</h2>
+      </div>
+  <!-- first column-->
+      <div id="thesis">
+        <div class="urban">
+          <div class="video-box">
+            <video width="320" height="240" controls>
+            <source src="resources/videos/thesis.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="thesis-narrative">
+            <h3>Reimagine urban</h3>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <br/>totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta <br/>sunt
+              explicabo."</p>
+          </div>
+        </div> <!--urban closing div-->
+   <!-- second column-->
+        <div class="second-column">
+          <div class="fisma-img">
+            <img src="./resources/images/thesis-fisma.jpg">
+            <div class="fisma-text">
+             <h3>Fisma: Design and</h3>
+             <p>Designer showcase of new <br/>prototype product</p>
+            </div>
+          </div>
+          <div class="now-img">
+            <img src="./resources/images/thesis-now-and-then.jpg">
+            <div class="now-text">
+              <h3>Now and then</h3>
+              <p>Research study about new york</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- thesis closing div -->
+    </section4>
+    <footer>
+      <p>2016 colmar academy all rights reserved</p>
+      <div class="footer-buttons">
+        <a href="#" class="button">terms</a>
+        <a href="#" class="button">privacy</a>
+      </div>
+    </footer>
   </body>
 </html>
